@@ -2,6 +2,7 @@ import streamlit as st
 import pickle
 import pandas as pd
 import requests
+import os
 
 # Page configuration for better appearance
 st.set_page_config(
