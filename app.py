@@ -862,9 +862,11 @@ st.markdown('''
 </div>
 ''', unsafe_allow_html=True)
 
-# Your original data loading - keeping it exactly the same
-movies = pd.DataFrame(pickle.load(open('movies_dict.pkl', 'rb')))
-similarity = pickle.load(open('similarity.pkl', 'rb'))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# ✅ Updated file loading (alternative)
+movies = pd.DataFrame(pickle.load(open(os.path.join(BASE_DIR, 'movies_dict.pkl'), 'rb')))
+similarity = pickle.load(open(os.path.join(BASE_DIR, 'similarity.pkl'), 'rb'))
 movie_list = list(movies['title'].values)
 
 # Selection container with Netflix styling
