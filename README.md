@@ -80,8 +80,7 @@ pickle-mixin
 
 ## 📸 Preview
 
-*(Add screenshots of the app UI here)*
-
+![App Preview](netflix_preview.jpg)
 ---
 
 ## 👨‍💻 Tech Stack
